@@ -1,0 +1,129 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+     width: 100%;
+}
+
+body {
+     background: #dadada;
+}
+
+#main {
+     width: 100%;
+     height: auto;
+}
+
+.container {
+     width: 700px;
+     height: auto;
+     background: white;
+     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+     margin: auto;
+     margin-top: 50px;
+     margin-bottom: 15px;
+     border-radius: 5px;
+     padding-top: 20px;
+}
+
+.messages-area {
+     display: flex;
+     flex-direction: column;
+     gap: 13px;
+     padding: 0 10px;
+}
+
+.message-items {
+     background: rgb(226, 226, 239);
+     border-radius: 5px;
+     padding: 4px 7px;
+     width: fit-content;
+     max-width: 300px;
+     font-size: 16px;
+}
+
+.messages-area .right {
+     float: right;
+}
+
+.messages-area .left {
+     float: left;
+}
+
+.msg-sender {
+     margin-right: 5px;
+     color: blue;
+     font-weight: 500;
+     font-size: 13.40px;
+}
+
+.message-send {
+     width: 100%;
+     height: 60px;
+     overflow: hidden;
+     background: rgb(217, 244, 217);
+     border: 2px solid #139fc9;
+     margin: auto;
+     margin-top: 50px;
+     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+     border-bottom-left-radius: 5px;
+     border-bottom-right-radius: 5px;
+}
+
+.chat-joined {
+     color: rgb(32, 235, 32);
+     font-weight: 500;
+}
+
+.disconnect {
+     color: red;
+     font-weight: 500;
+}
+
+.message-send .messageSearchBar {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: space-around;
+     background: white;
+}
+
+.messageSearchBar input {
+     width: 100%;
+     height: 100%;
+     border: none;
+     background: transparent;
+     outline: none;
+     overflow: hidden;
+     font-weight: 400;
+     font-size: 16px;
+     color: rgb(6, 6, 6);
+     padding-left: 20px;
+}
+
+.message-send .messageSearchBar img {
+     width: 60px;
+     height: 100%;
+     cursor: pointer;
+     transition: .2s ease-in-out;
+     transform: scale(.9);
+}
+
+.message-send .messageSearchBar img:hover {
+     opacity: .6;
+}
+
+
+
+
+/* Responsiveness  */
+@media(max-width: 710px){
+     .container {
+          width: 99%;
+     }
+}
